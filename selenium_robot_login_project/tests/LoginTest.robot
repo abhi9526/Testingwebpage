@@ -1,7 +1,7 @@
 *** Settings ***
 Library           SeleniumLibrary
-Library           OperatingSystem
 Library           Collections
+Library           OperatingSystem
 
 *** Variables ***
 ${URL}            https://www.saucedemo.com/
@@ -16,7 +16,6 @@ Successful Login With Valid Credentials
     Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --window-size=1920x1080
     Open Browser    ${URL}    ${BROWSER}    options=${options}
-    Maximize Browser Window
     Input Text    id:user-name    standard_user
     Input Text    id:password     secret_sauce
     Click Button  id:login-button
