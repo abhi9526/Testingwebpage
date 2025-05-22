@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot tests/LoginTest.robot
+        robot selenium_robot_login_project/tests/LoginTest.robot
