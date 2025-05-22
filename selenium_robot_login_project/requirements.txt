@@ -1,5 +1,5 @@
 robotframework==6.1.1
 robotframework-seleniumlibrary==6.1.0
-selenium==4.9.1
+selenium==4.32.0
 
 
