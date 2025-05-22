@@ -13,7 +13,7 @@ Successful Login With Valid Credentials
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --disable-gpu
-    Call Method    ${options}    add_argument    --window-size=1920,1080
+    Call Method    ${options}    add_argument    --window-size=1920x1080
 
     Open Browser    ${URL}    ${BROWSER}    options=${options}
     Maximize Browser Window
