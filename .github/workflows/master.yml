@@ -1,14 +1,14 @@
-name: Run Robot Framework Login Test
+name: Run Robot Framework Tests
 
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   robot-tests:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -22,6 +22,6 @@ jobs:
         run: |
           pip install -r selenium_robot_login_project/requirements.txt
 
-      - name: Run Robot Framework Test
+      - name: Run Robot Framework tests
         run: |
           robot selenium_robot_login_project/tests/LoginTest.robot
