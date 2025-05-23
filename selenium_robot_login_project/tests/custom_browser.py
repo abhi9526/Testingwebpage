@@ -6,7 +6,7 @@ def open_custom_firefox(url):
     options = Options()
     options.binary_location = r"C:\Program Files\Mozilla Firefox\firefox.exe"
 
-    service = Service(r"C:\Path\To\geckodriver.exe")
+    service = Service(r" C:\Windows\geckodriver.exe")
     driver = webdriver.Firefox(service=service, options=options)
     driver.get(url)
     return driver
